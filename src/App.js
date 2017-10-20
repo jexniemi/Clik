@@ -16,7 +16,6 @@ class App extends React.Component {
       }
   
       getNews() {
-  
           $.get("https://www.hs.fi/rss/tuoreimmat.xml",function(data) {    
   
               var $xml = $(data);   
@@ -45,7 +44,7 @@ class App extends React.Component {
                 </header>
                 <div className="App-feeds">
                 </div>
-                <div className="panel-list">{this.state.news[1].title}</div>
+                <div className="panel-list"><ListNews list={this.state.news} /></div>
               </div>
           );
       }
