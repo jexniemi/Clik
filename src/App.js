@@ -44,7 +44,9 @@ class App extends React.Component {
                 </header>
                 <div className="App-feeds">
                 </div>
-                <div className="panel-list"><ListNews title="Helsingin Sanomat" list={this.state.news.slice(0,10)} /></div>
+                <div className="panel-list">
+                  <ListNews title="Helsingin Sanomat" list={this.state.news.slice(0,10)} />
+                </div>
               </div>
           );
       }

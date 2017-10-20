@@ -1,4 +1,5 @@
 import React from 'react';
+import '../css/ListNews.css';
 
 class ListNews extends React.Component {
     constructor(props) {
