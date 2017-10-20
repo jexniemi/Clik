@@ -13,7 +13,7 @@ class ListNews extends React.Component {
         ));
         return (
             <div>
-                <h2>Helsingin Sanomat:</h2>
+                <h2>{this.props.title}</h2>
                 {toList}
             </div>
         );
