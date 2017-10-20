@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
-import './App.css';
+import './css/App.css';
 import ListNews from './components/ListNews';
 /*eslint-env jquery*/
 
@@ -40,7 +40,7 @@ class App extends React.Component {
           return (
               <div className="App">
                 <header className="App-header">
-                  <h1 className="App-title">News</h1>
+                  <h1 className="App-title">allNews</h1>
                 </header>
                 <div className="App-feeds">
                 </div>
