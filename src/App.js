@@ -12,11 +12,11 @@ class App extends React.Component {
       }
   
       componentDidMount() {
-          this.getNews();
+          this.getNews("https://www.hs.fi/rss/tuoreimmat.xml");
       }
   
-      getNews() {
-          $.get("https://www.hs.fi/rss/tuoreimmat.xml",function(data) {    
+      getNews(url) {
+          $.get(url,function(data) {    
   
               var $xml = $(data);   
               var items = [];

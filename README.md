@@ -1,1 +1,1 @@
-allNews
+# Clik! #

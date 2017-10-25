@@ -1,3 +1,7 @@
+a{
+    color: rgb(56, 55, 55);
+}
+
 a:link {
     text-decoration: none;
 }
@@ -27,4 +31,5 @@ li{
 
 .Title{
     font-family: "Lucida Console", Monaco, monospace;
+    color: rgb(73, 73, 73);
 }
