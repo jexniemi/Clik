@@ -5,35 +5,12 @@ import ListNews from './components/ListNews';
 /*eslint-env jquery*/
 
 class App extends React.Component {
-  
       constructor(props) { 
           super(props);
-          this.state = { news: [{},{}] };
-      }
-  
-      componentDidMount() {
-          this.getNews("https://www.hs.fi/rss/tuoreimmat.xml");
-      }
-  
-      getNews(url) {
-          $.get(url,function(data) {    
-  
-              var $xml = $(data);   
-              var items = [];
-  
-              $xml.find("item").each(function() {
-                  var $this = $(this);
-                  items.push({
-                      title: $this.find("title").text(),
-                      link: $this.find("link").text(),
-                      description: $this.find("description").text(),
-                      pubDate: $this.find("pubDate").text(),
-                  });
-              });
-  
-              this.setState({ news: items });
-  
-          }.bind(this),'xml');    
+
+          this.state = {
+            language: "finnish"
+          }
       }
   
       render() { 
@@ -45,7 +22,9 @@ class App extends React.Component {
                 <div className="App-feeds">
                 </div>
                 <div className="panel-list">
-                  <ListNews title="Helsingin Sanomat" list={this.state.news.slice(0,10)} />
+                  <ListNews title="Helsingin Sanomat" url="https://www.hs.fi/rss/tuoreimmat.xml" /> 
+                  <ListNews title="Ilta-Sanomat" url="https://www.is.fi/rss/tuoreimmat.xml" />
+                  <ListNews title="Iltalehti" url="http://www.iltalehti.fi/rss/uutiset.xml" />
                 </div>
               </div>
           );

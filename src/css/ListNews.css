@@ -32,4 +32,9 @@ li{
 .Title{
     font-family: "Lucida Console", Monaco, monospace;
     color: rgb(73, 73, 73);
+    text-decoration: underline;
+}
+
+.NewsList {
+    margin-bottom: 1cm;
 }
