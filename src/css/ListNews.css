@@ -14,12 +14,17 @@ a:active {
     text-decoration: underline;
 }
 
-ul {
-    list-style-type: none;
+ol {
     margin: 0;
     padding: 0;
 }
 
 li{
     margin: 10px 0;
+    font-family: "Times New Roman", Times, serif;	
+    font-size: 110%;
   }
+
+.Title{
+    font-family: "Lucida Console", Monaco, monospace;
+}

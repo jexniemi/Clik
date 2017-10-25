@@ -40,7 +40,7 @@ class App extends React.Component {
           return (
               <div className="App">
                 <header className="App-header">
-                  <h1 className="App-title">allNews</h1>
+                  <h1 className="App-title">Clik!</h1>
                 </header>
                 <div className="App-feeds">
                 </div>

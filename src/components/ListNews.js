@@ -8,16 +8,12 @@ class ListNews extends React.Component {
 
     render() {
         const toList = this.props.list.map((item, i) => (
-            <div>
-                <ul>
-                    <li><a target="_blank" href={item.link}>{item.title}</a></li>
-                </ul>
-            </div>
+            <li><a target="_blank" href={item.link}>{item.title}</a></li>
         ));
         return (
             <div>
-                <h2>{this.props.title}</h2>
-                {toList}
+                <h2 className="Title">{this.props.title}</h2>
+                <ol>{toList}</ol>
             </div>
         );
     }
