@@ -9,7 +9,7 @@ class App extends React.Component {
           super(props);
 
           this.state = {
-            language: "finnish"
+            country: "finland"
           }
       }
   
@@ -19,9 +19,7 @@ class App extends React.Component {
                 <header className="App-header">
                   <h1 className="App-title">Clik!</h1>
                 </header>
-                <div className="App-feeds">
-                </div>
-                <div className="panel-list">
+                <div className="Lists">
                   <ListNews title="Helsingin Sanomat" url="https://www.hs.fi/rss/tuoreimmat.xml" /> 
                   <ListNews title="Ilta-Sanomat" url="https://www.is.fi/rss/tuoreimmat.xml" />
                   <ListNews title="Iltalehti" url="http://www.iltalehti.fi/rss/uutiset.xml" />
