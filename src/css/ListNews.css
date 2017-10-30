@@ -1,20 +1,20 @@
-a{
+.LN-a{
     color: rgb(56, 55, 55);
 }
 
-a:link {
+.LN-a:link {
     text-decoration: none;
 }
 
-a:visited {
+.LN-a:visited {
     text-decoration: none;
 }
 
-a:hover {
+.LN-a:hover {
     text-decoration: underline;
 }
 
-a:active {
+.LN-a:active {
     text-decoration: underline;
 }
 
@@ -23,7 +23,7 @@ ol {
     padding: 0;
 }
 
-li{
+.LN-li{
     margin: 10px 0;
     font-family: "Times New Roman", Times, serif;	
     font-size: 110%;

@@ -37,7 +37,7 @@ class ListNews extends React.Component {
 
     render() {
         const toList = this.state.news.slice(0, 10).map((item, i) => (
-            <li><a target="_blank" href={item.link}>{item.title}</a></li>
+            <li className="LN-li"><a className="LN-a" target="_blank" href={item.link}>{item.title}</a></li>
         ));
         return (
             <div className="NewsList">
