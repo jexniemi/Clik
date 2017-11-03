@@ -16,13 +16,12 @@ class App extends React.Component {
   render() {
     return (
       <div className="App">
-        <header className="Header">
-          <div className="Navbar">
-            <ul className="Nav-ul">
-              <li className="Nav-li"><h1 className="Site-Title">Clik!</h1></li>
-            </ul>
-          </div>
-        </header>
+        <div className="Navbar">
+          <ul className="Nav-ul">
+            <li className="Nav-li"><h1 className="Site-Title">Clik!</h1></li>
+            <li className="Nav-button"><button className="button3">World</button></li>
+          </ul>
+        </div>
         <div className="Lists">
           <ListNews title="Helsingin Sanomat" url="https://www.hs.fi/rss/tuoreimmat.xml" />
           <ListNews title="Ilta-Sanomat" url="https://www.is.fi/rss/tuoreimmat.xml" />

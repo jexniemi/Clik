@@ -1,14 +1,30 @@
-.Lists {
-  padding: 40px;
+.button3 {
+  border-radius: 12px;
+  background-color: rgb(250, 93, 50); /* Green */
+  border: none;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;  
+  float: right;
+  margin-right: 20px;
+  margin-top: 10px;
 }
 
-.Navbar {
-  position: fixed;
-  width: 100%;
+.Lists {
+  padding: 40px;
+  margin-top:60px;
 }
 
 .Navbar {
   opacity: 0.95;
+  position: fixed;
+  width: 100%;
+  top: 0px;  
 }
 
 .Nav-ul {
@@ -16,7 +32,7 @@
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: rgb(29, 202, 44);
+  background-color: rgb(33, 206, 47);
 }
 
 .Nav-li {
@@ -29,7 +45,7 @@
 }
 
 .Site-Title {
-  font-size: 1.5em;
+  font-size: 1.7em;
   font-family: "Courier New", Courier, monospace;
   color: white;
   margin-left: 15px;
