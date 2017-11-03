@@ -1,3 +1,7 @@
+.App {
+  background-image: url("../pics/map.png");
+}
+
 .button3 {
   border-radius: 12px;
   background-color: rgb(250, 93, 50); /* Green */
@@ -13,6 +17,19 @@
   float: right;
   margin-right: 20px;
   margin-top: 10px;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+}
+
+.button3:hover {
+    background-color: rgb(6, 156, 6);
+    color: white;
+}
+
+.Content {
+  background-color: white;
+  max-width: 1190px;
+  margin: 0 auto;
 }
 
 .Lists {
@@ -45,7 +62,7 @@
 }
 
 .Site-Title {
-  font-size: 1.7em;
+  font-size: 1.57em;
   font-family: "Courier New", Courier, monospace;
   color: white;
   margin-left: 15px;
