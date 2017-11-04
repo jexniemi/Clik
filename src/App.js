@@ -1,5 +1,4 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
+import React from 'react';
 import './css/App.css';
 import ListNews from './components/ListNews';
 /*eslint-env jquery*/
