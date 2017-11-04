@@ -1,5 +1,5 @@
 .App {
-  background-image: url("../pics/map.png");
+  background-image: url("../pics/newspaper.jpg");
 }
 
 .button3 {
@@ -12,7 +12,6 @@
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
-  margin: 4px 2px;
   cursor: pointer;  
   float: right;
   margin-right: 20px;
@@ -38,7 +37,7 @@
 }
 
 .Navbar {
-  opacity: 0.95;
+  opacity: 0.9;
   position: fixed;
   width: 100%;
   top: 0px;  
@@ -49,7 +48,7 @@
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: rgb(33, 206, 47);
+  background-color: rgb(61, 70, 60);
 }
 
 .Nav-li {
