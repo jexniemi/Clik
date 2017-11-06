@@ -1,0 +1,68 @@
+.App {
+  background-image: url("../pics/newspaper.jpg");
+}
+
+.button3 {
+  border-radius: 12px;
+  background-color: rgb(250, 93, 50); /* Green */
+  border: none;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;  
+  float: right;
+  margin-right: 20px;
+  margin-top: 10px;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+}
+
+.button3:hover {
+    background-color: rgb(6, 156, 6);
+    color: white;
+}
+
+.Content {
+  background-color: white;
+  max-width: 1190px;
+  margin: 0 auto;
+}
+
+.Lists {
+  padding: 40px;
+  margin-top:60px;
+}
+
+.Navbar {
+  opacity: 0.9;
+  position: fixed;
+  width: 100%;
+  top: 0px;  
+}
+
+.Nav-ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: rgb(61, 70, 60);
+}
+
+.Nav-li {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 0px;
+  text-decoration: none;
+}
+
+.Site-Title {
+  font-size: 1.57em;
+  font-family: "Courier New", Courier, monospace;
+  color: white;
+  margin-left: 15px;
+}
