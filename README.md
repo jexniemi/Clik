@@ -2,7 +2,7 @@
 
  Web application that collects news from popular news websites
  
- Will be available online soon. Clone and run the following commands in the root directory to test the app:
+ Will be available online soon. Clone and run the following commands in the Clikk/ui/ directory to test the app:
 
 > $npm install  
 > $npm start
