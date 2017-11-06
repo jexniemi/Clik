@@ -1,25 +1,23 @@
 const express = require('express');
-const webpackDevMiddleware = require('webpack-dev-middleware');
-const webpack = require('webpack');
-const webpackConfig = require('./webpack.config.js');
+const path = require('path');
+
 const app = express();
+const PORT = process.env.PORT || 5000;
 
-const compiler = webpack(webpackConfig);
+// Priority serve any static files.
+app.use(express.static(path.resolve(__dirname, './build')));
 
-app.use(express.static(__dirname + '/www'));
+// Answer API requests.
+app.get('/api', function (req, res) {
+  res.set('Content-Type', 'application/json');
+  res.send('{"message":"Hello from the custom server!"}');
+});
 
-app.use(webpackDevMiddleware(compiler, {
-  hot: true,
-  filename: 'bundle.js',
-  publicPath: '/',
-  stats: {
-    colors: true,
-  },
-  historyApiFallback: true,
-}));
+// All remaining requests return the React app, so it can handle routing.
+app.get('*', function(request, response) {
+  response.sendFile(path.resolve(__dirname, './build', 'index.html'));
+});
 
-const server = app.listen(8080, function () {
-  const host = server.address().address;
-  const port = server.address().port;
-  console.log('Example app listening at http://%s:%s', host, port);
+app.listen(PORT, function () {
+  console.log(`Listening on port ${PORT}`);
 });
