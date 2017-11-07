@@ -25,7 +25,7 @@ class App extends React.Component {
           <div className="Lists">
             <ListNews title="Helsingin Sanomat" url="https://www.hs.fi/rss/tuoreimmat.xml" />
             <ListNews title="Ilta-Sanomat" url="https://www.is.fi/rss/tuoreimmat.xml" />
-            <ListNews title="Iltalehti" url="https://www.iltalehti.fi/rss/uutiset.xml" />
+            <ListNews title="Iltalehti" url="//www.iltalehti.fi/rss/uutiset.xml" />
           </div>
         </div>
       </div>
