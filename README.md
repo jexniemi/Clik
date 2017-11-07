@@ -6,7 +6,7 @@
 
 https://clikk.herokuapp.com/
 
-There may be some differences between the version on Heroku and the version on GitHub. Unfortunately Iltalehti works only locally at the moment.
+There may be some differences between the version on Heroku and the version on GitHub.
 
 Clone and run the following commands in the Clikk/ui/ directory to test the app locally:
 
