@@ -4,7 +4,7 @@
  
 ## Instructions:
 
-[Clik here!] (https://clikk.herokuapp.com/)
+[Clik here!](https://clikk.herokuapp.com/)
 
 There may be some differences between the version on Heroku and the version on GitHub.
 
