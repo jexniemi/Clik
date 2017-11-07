@@ -7,6 +7,8 @@
 > $npm install  
 > $npm start
 
-![Picture of the current state of the app](https://raw.githubusercontent.com/jexniemi/Clik/blob/master/ui/src/pics/status.jpg)
+![Picture of the current state of the app](https://raw.githubusercontent.com/jexniemi/Clik/master/ui/src/pics/status.jpg)
+
+![Picture of the current state of the app](ui/src/pics/status.jpg "Title")
  
  <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/"><img alt="Creative Commons -lisenssi" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/3.0/88x31.png" /></a><br />Tämä teos on lisensoitu <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/">Creative Commons Nimeä-EiKaupallinen-JaaSamoin 3.0 Ei sovitettu -lisenssillä</a>.
