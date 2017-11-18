@@ -18,7 +18,6 @@ class App extends React.Component {
         <div className="Navbar">
           <ul className="Nav-ul">
             <li className="Nav-li"><h1 className="Site-Title">Clik!</h1></li>
-            <li className="Nav-button"><button className="button3">World</button></li>
           </ul>
         </div>
         <div className="Content">
@@ -27,6 +26,9 @@ class App extends React.Component {
             <ListNews title="Ilta-Sanomat" url="https://www.is.fi/rss/tuoreimmat.xml" />
             <ListNews title="MTV.fi" url="https://www.mtv.fi/api/feed/rss/uutiset_uusimmat" />
           </div>
+        </div>
+        <div className="BottomBar">
+          
         </div>
       </div>
     );

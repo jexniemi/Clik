@@ -1,6 +1,8 @@
 .App {
   background-image: url("../pics/newspaper.jpg");
-  padding-top: 62px; 
+  padding-top: 80px; 
+  min-height: 1000px;
+  position: relative;
 }
 
 .button3 {
@@ -29,8 +31,9 @@
 
 .Content {
   background-color: white;
-  max-width: 1190px;
+  max-width: 95%;
   margin: auto;
+  border-radius: 20px;
 }
 
 .Lists {
@@ -68,4 +71,13 @@
   font-family: "Lucida Console", Monaco, monospace;
   color: white;
   margin-left: 15px;
+}
+
+.BottomBar {
+  width: 100%;
+  bottom: 0px;
+  background-color: rgb(34, 34, 34);
+  height: 8%;
+  z-index: 14000;
+  position:absolute;
 }

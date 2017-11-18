@@ -49,7 +49,7 @@ class ListNews extends React.Component {
                 <a className="LN-a" target="_blank" href={item.link}>{i + 1 + ". " + item.title}</a>
             </ListGroupItem>
         ));
-    var header = (<a href={this.state.link} target="_blank"><img className="Logo" src={this.state.imgURL} alt="SiteLogo" /></a>);
+        var header = (<a href={this.state.link} target="_blank"><img className="Logo" src={this.state.imgURL} alt="SiteLogo" /></a>);
         return (
             <div className="LN-wrapper">
                 <Panel defaultExpanded header={header}>
