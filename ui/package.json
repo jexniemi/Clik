@@ -7,6 +7,7 @@
     "express": "^4.16.2",
     "jquery": "^3.2.1",
     "react": "^16.0.0",
+    "react-bootstrap": "^0.31.5",
     "react-dom": "^16.0.0",
     "react-scripts": "1.0.14",
     "rss-to-json": "^1.0.2"

@@ -1,6 +1,9 @@
 import React from 'react';
 import '../css/ListNews.css';
 import $ from "jquery";
+var Panel = require('react-bootstrap').Panel;
+var ListGroup = require('react-bootstrap').ListGroup;
+var ListGroupItem = require('react-bootstrap').ListGroupItem;
 
 class ListNews extends React.Component {
     constructor(props) {
@@ -8,7 +11,8 @@ class ListNews extends React.Component {
         this.state = {
             news: [{}, {}],
             imgURL: "",
-            link: ""
+            link: "",
+            open: true
         }
     }
 
@@ -41,12 +45,18 @@ class ListNews extends React.Component {
 
     render() {
         const toList = this.state.news.slice(0, 10).map((item, i) => (
-            <li className="LN-li" key={i}><a className="LN-a" target="_blank" href={item.link}>{item.title}</a></li>
+            <ListGroupItem>
+                <a className="LN-a" target="_blank" href={item.link}>{i + 1 + ". " + item.title}</a>
+            </ListGroupItem>
         ));
+    var header = (<a href={this.state.link} target="_blank"><img className="Logo" src={this.state.imgURL} alt="SiteLogo" /></a>);
         return (
-            <div className="NewsList">
-                <a href={this.state.link} target="_blank"><img className="Logo" src={this.state.imgURL} alt="SiteLogo" /></a>
-                <ol>{toList}</ol>
+            <div className="LN-wrapper">
+                <Panel defaultExpanded header={header}>
+                    <ListGroup fill>
+                        {toList}
+                    </ListGroup>
+                </Panel>
             </div>
         );
     }

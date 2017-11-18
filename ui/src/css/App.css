@@ -16,6 +16,7 @@
   float: right;
   margin-right: 20px;
   margin-top: 10px;
+  margin-bottom: 10px;
   -webkit-transition-duration: 0.4s; /* Safari */
   transition-duration: 0.4s;
 }
@@ -33,7 +34,7 @@
 
 .Lists {
   padding: 40px;
-  margin-top:60px;
+  margin-top:50px;
 }
 
 .Navbar {
@@ -41,6 +42,9 @@
   position: fixed;
   width: 100%;
   top: 0px;  
+  min-height:50px;
+  background-color: rgb(61, 70, 60);
+  z-index: 15000;
 }
 
 .Nav-ul {
@@ -48,7 +52,6 @@
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: rgb(61, 70, 60);
 }
 
 .Nav-li {
@@ -62,7 +65,7 @@
 
 .Site-Title {
   font-size: 1.57em;
-  font-family: "Courier New", Courier, monospace;
+  font-family: "Lucida Console", Monaco, monospace;
   color: white;
   margin-left: 15px;
 }
