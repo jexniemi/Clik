@@ -6,7 +6,9 @@ class ListNews extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            news: [{},{}] 
+            news: [{}, {}],
+            imgURL: "",
+            link: ""
         }
     }
 
@@ -15,12 +17,14 @@ class ListNews extends React.Component {
     }
 
     getNews(url) {
-        $.get(url,function(data) {    
+        $.get(url, function (data) {
 
-            var $xml = $(data);   
+            var $xml = $(data);
             var items = [];
+            this.setState({ imgURL: $xml.find("image").find("url").text() });
+            this.setState({ link: $xml.find("image").find("link").text() });
 
-            $xml.find("item").each(function() {
+            $xml.find("item").each(function () {
                 var $this = $(this);
                 items.push({
                     title: $this.find("title").text(),
@@ -32,7 +36,7 @@ class ListNews extends React.Component {
 
             this.setState({ news: items });
 
-        }.bind(this),'xml');    
+        }.bind(this), 'xml');
     }
 
     render() {
@@ -41,7 +45,7 @@ class ListNews extends React.Component {
         ));
         return (
             <div className="NewsList">
-                <h2 className="Title">{this.props.title}</h2>
+                <a href={this.state.link} target="_blank"><img className="Logo" src={this.state.imgURL} alt="SiteLogo" /></a>
                 <ol>{toList}</ol>
             </div>
         );
