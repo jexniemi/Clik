@@ -1,5 +1,6 @@
 .App {
   background-image: url("../pics/newspaper.jpg");
+  padding-top: 62px; 
 }
 
 .button3 {
@@ -34,7 +35,6 @@
 
 .Lists {
   padding: 40px;
-  margin-top:50px;
 }
 
 .Navbar {
