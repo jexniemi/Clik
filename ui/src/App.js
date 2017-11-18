@@ -1,7 +1,6 @@
 import React from 'react';
 import './css/App.css';
 import ListNews from './components/ListNews';
-/*eslint-env jquery*/
 
 class App extends React.Component {
   constructor(props) {

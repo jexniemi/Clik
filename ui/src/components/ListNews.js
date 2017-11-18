@@ -1,6 +1,6 @@
 import React from 'react';
 import '../css/ListNews.css';
-/*eslint-env jquery*/
+import $ from "jquery";
 
 class ListNews extends React.Component {
     constructor(props) {
@@ -37,7 +37,7 @@ class ListNews extends React.Component {
 
     render() {
         const toList = this.state.news.slice(0, 10).map((item, i) => (
-            <li className="LN-li"><a className="LN-a" target="_blank" href={item.link}>{item.title}</a></li>
+            <li className="LN-li" key={i}><a className="LN-a" target="_blank" href={item.link}>{item.title}</a></li>
         ));
         return (
             <div className="NewsList">
