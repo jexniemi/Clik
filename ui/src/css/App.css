@@ -1,44 +1,31 @@
+@media only screen and (min-width: 786px) {
+
 .App {
   background-image: url("../pics/newspaper.jpg");
   padding-top: 80px; 
-  min-height: 1000px;
+  min-height: 1200px;
   position: relative;
-}
 
-.button3 {
-  border-radius: 12px;
-  background-color: rgb(250, 93, 50); /* Green */
-  border: none;
-  color: white;
-  padding: 10px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  cursor: pointer;  
-  float: right;
-  margin-right: 20px;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  -webkit-transition-duration: 0.4s; /* Safari */
-  transition-duration: 0.4s;
-}
-
-.button3:hover {
-    background-color: rgb(6, 156, 6);
-    color: white;
 }
 
 .Content {
+  padding: 40px;
   background-color: white;
   max-width: 95%;
-  margin: auto;
+  margin: 0 auto;
   border-radius: 20px;
+  height: auto;
 }
 
-.Lists {
-  padding: 40px;
+.Footer {
+  width: 100%;
+  bottom: 0px;
+  background-color: rgb(34, 34, 34);
+  height: 100px;
+  z-index: 14000;
+  position:absolute;
 }
+
 
 .Navbar {
   opacity: 0.9;
@@ -57,15 +44,6 @@
   overflow: hidden;
 }
 
-.Nav-li {
-  float: left;
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 0px;
-  text-decoration: none;
-}
-
 .Site-Title {
   font-size: 1.57em;
   font-family: "Lucida Console", Monaco, monospace;
@@ -73,11 +51,4 @@
   margin-left: 15px;
 }
 
-.BottomBar {
-  width: 100%;
-  bottom: 0px;
-  background-color: rgb(34, 34, 34);
-  height: 8%;
-  z-index: 14000;
-  position:absolute;
 }

@@ -1,5 +1,6 @@
 import React from 'react';
 import './css/App.css';
+import './css/MobileApp.css';
 import ListNews from './components/ListNews';
 
 class App extends React.Component {
@@ -17,18 +18,15 @@ class App extends React.Component {
       <div className="App">
         <div className="Navbar">
           <ul className="Nav-ul">
-            <li className="Nav-li"><h1 className="Site-Title">Clik!</h1></li>
+            <h1 className="Site-Title">Clik!</h1>
           </ul>
         </div>
         <div className="Content">
-          <div className="Lists">
-            <ListNews title="Helsingin Sanomat" url="https://www.hs.fi/rss/tuoreimmat.xml" />
-            <ListNews title="Ilta-Sanomat" url="https://www.is.fi/rss/tuoreimmat.xml" />
-            <ListNews title="MTV.fi" url="https://www.mtv.fi/api/feed/rss/uutiset_uusimmat" />
-          </div>
+          <ListNews title="Helsingin Sanomat" url="https://www.hs.fi/rss/tuoreimmat.xml" />
+          <ListNews title="Ilta-Sanomat" url="https://www.is.fi/rss/tuoreimmat.xml" />
+          <ListNews title="MTV.fi" url="https://www.mtv.fi/api/feed/rss/uutiset_uusimmat" />
         </div>
-        <div className="BottomBar">
-          
+        <div className="Footer">
         </div>
       </div>
     );
