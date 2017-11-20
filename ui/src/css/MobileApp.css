@@ -35,6 +35,15 @@
         clear:both
       }
 
+      .Tabs {
+        width: 96%;
+        margin-left: 1.5%;
+    }
+
+    .TabText {
+        color: rgb(95, 95, 95);
+    }
+
       .Footer {
         display: none;
       }

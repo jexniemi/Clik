@@ -1,11 +1,16 @@
 @media only screen and (min-width: 786px) {
 
+  .Wrapper {
+    display: inline-block;
+    position: relative;
+  }
+
 .App {
   background-image: url("../pics/newspaper.jpg");
   padding-top: 80px; 
   min-height: 1200px;
-  position: relative;
-
+  display: flex;
+  flex-direction: column;
 }
 
 .Content {
@@ -24,6 +29,17 @@
   height: 100px;
   z-index: 14000;
   position:absolute;
+  text-align: center;
+}
+
+.Tabs {
+  width: 96%;
+  margin-left: 1.5%;
+}
+
+.TabText {
+  color: rgb(78, 78, 78);
+  font-family: "Comic Sans MS", cursive, sans-serif;
 }
 
 
