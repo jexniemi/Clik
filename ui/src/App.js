@@ -10,13 +10,20 @@ class App extends React.Component {
   constructor(props) {
     super(props);
 
+    var initialTabStates = ["1", "2"]  
+    
     this.state = {
-      activeTab: "finland"
+      activeTab: "finland",
+      tabStates: initialTabStates
     }
+    this.setActive = this.setActive.bind(this);
   }
 
-  render() {
+  setActive(newActive) {
+  }
 
+
+  render() {
     return (
       <div className="Wrapper">
         <div className="App">
@@ -27,8 +34,8 @@ class App extends React.Component {
           </div>
           <div className="Content">
           <Nav bsStyle="tabs" className="Tabs" activeKey="1" onSelect={this.handleSelect}>
-          <NavItem eventKey="1" title="finland"><b className="TabText">Finland</b></NavItem>
-          <NavItem eventKey="2" title="uk"><b className="TabText">UK</b></NavItem>
+          <NavItem eventKey={this.state.tabStates[0]} title="finland"><b className="TabText">Finland</b></NavItem>
+          <NavItem eventKey={this.state.tabStates[1]} title="uk"><b className="TabText">UK</b></NavItem>
           </Nav>
             <ListNews title="Helsingin Sanomat" url="https://www.hs.fi/rss/tuoreimmat.xml" />
             <ListNews title="Ilta-Sanomat" url="https://www.is.fi/rss/tuoreimmat.xml" />

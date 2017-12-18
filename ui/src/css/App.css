@@ -3,6 +3,7 @@
   .Wrapper {
     display: inline-block;
     position: relative;
+    margin: 0 0 auto;
   }
 
 .App {
@@ -39,7 +40,7 @@
 
 .TabText {
   color: rgb(78, 78, 78);
-  font-family: "Comic Sans MS", cursive, sans-serif;
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
 }
 
 
