@@ -2,6 +2,8 @@ import React from 'react';
 import './css/App.css';
 import './css/MobileApp.css';
 import ListNews from './components/ListNews';
+import Tabs from './components/Tabs';
+import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 
 var Nav = require('react-bootstrap').Nav;
 var NavItem = require('react-bootstrap').NavItem;
@@ -33,13 +35,9 @@ class App extends React.Component {
             </ul>
           </div>
           <div className="Content">
-          <Nav bsStyle="tabs" className="Tabs" activeKey="1" onSelect={this.handleSelect}>
-          <NavItem eventKey={this.state.tabStates[0]} title="finland"><b className="TabText">Finland</b></NavItem>
-          <NavItem eventKey={this.state.tabStates[1]} title="uk"><b className="TabText">UK</b></NavItem>
-          </Nav>
-            <ListNews title="Helsingin Sanomat" url="https://www.hs.fi/rss/tuoreimmat.xml" />
-            <ListNews title="Ilta-Sanomat" url="https://www.is.fi/rss/tuoreimmat.xml" />
-            <ListNews title="MTV.fi" url="https://www.mtv.fi/api/feed/rss/uutiset_uusimmat" />
+          <MuiThemeProvider>
+          <Tabs className="Tabs"/>
+          </MuiThemeProvider>
           </div>
         </div>
         <div className="Footer">

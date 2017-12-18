@@ -15,7 +15,7 @@
 }
 
 .Content {
-  padding: 40px;
+  padding: 20px;
   background-color: white;
   max-width: 95%;
   margin: 0 auto;
@@ -34,8 +34,7 @@
 }
 
 .Tabs {
-  width: 96%;
-  margin-left: 1.5%;
+  width: 100%;
 }
 
 .TabText {
