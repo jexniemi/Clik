@@ -1,0 +1,52 @@
+@media only screen and (max-width: 768px) {
+
+    .App {
+        padding-top: 60px; 
+        height: auto;
+        position: relative;
+      }
+
+      .Navbar {
+        opacity: 0.9;
+        position: fixed;
+        width: 100%;
+        top: 0px;  
+        min-height:50px;
+        background-color: rgb(61, 70, 60);
+        z-index: 15000;
+      }
+
+      .Lists {
+        padding: 10px;
+      }
+
+      .Site-Title {
+        font-size: 1.57em;
+        font-family: "Lucida Console", Monaco, monospace;
+        color: white;
+      }
+
+      .Content {
+        background-color: white;
+        max-width: 95%;
+        margin: 0 auto;
+        border-radius: 20px;
+        float: center;
+        clear:both
+      }
+
+      .Tabs {
+        width: 96%;
+        margin-left: 1.5%;
+    }
+
+    .TabText {
+        color: rgb(95, 95, 95);
+    }
+
+      .Footer {
+        display: none;
+      }
+
+
+}

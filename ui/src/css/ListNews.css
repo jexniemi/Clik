@@ -1,48 +1,45 @@
+@media only screen and (min-width: 786px) {
 
-.LN-a{
-    color: rgb(56, 55, 55);
+.ln-wrapper {
+    max-width: 30%;
+    display: inline-block;
+    vertical-align: top;
+    margin: 1.5%;
+    min-width: 30%;
+    min-height: 632px;
 }
 
-.LN-a:link {
-    text-decoration: none;
-}
-
-.LN-a:visited {
-    text-decoration: none;
-}
-
-.LN-a:hover {
-    text-decoration: underline;
-}
-
-.LN-a:active {
-    text-decoration: underline;
-}
 
 .Logo {
     height: auto; 
     width: auto; 
-    max-width: 160px; 
-    max-height: 32px;
+    max-width: 120px; 
+    max-height: 24px;
 }
 
-ol {
-    margin: 0;
-    padding: 0;
-}
-
-.LN-li{
-    margin: 10px 0;
-    font-family: "Times New Roman", Times, serif;	
-    font-size: 110%;
-  }
-
-.Title{
-    font-family: "Lucida Console", Monaco, monospace;
-    color: rgb(73, 73, 73);
-    text-decoration: underline;
-}
 
 .NewsList {
     margin-bottom: 1cm;
+}
+
+.ln-a{
+    color: rgb(56, 55, 55);
+}
+
+.ln-a:link {
+    text-decoration: none;
+}
+
+.ln-a:visited {
+    text-decoration: none;
+}
+
+.ln-a:hover {
+    text-decoration: underline;
+}
+
+.ln-a:active {
+    text-decoration: underline;
+}
+
 }

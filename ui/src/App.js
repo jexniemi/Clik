@@ -1,36 +1,49 @@
 import React from 'react';
 import './css/App.css';
-import ListNews from './components/ListNews';
+import './css/MobileApp.css';
+import Tabs from './components/Tabs';
+import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
+
 
 class App extends React.Component {
   constructor(props) {
     super(props);
 
+    var initialTabStates = ["1", "2"]  
+    
     this.state = {
-      country: "finland"
+      activeTab: "finland",
+      tabStates: initialTabStates
     }
+    this.setActive = this.setActive.bind(this);
   }
 
-  render() {
+  setActive(newActive) {
+  }
 
+
+  render() {
     return (
-      <div className="App">
-        <div className="Navbar">
-          <ul className="Nav-ul">
-            <li className="Nav-li"><h1 className="Site-Title">Clik!</h1></li>
-            <li className="Nav-button"><button className="button3">World</button></li>
-          </ul>
-        </div>
-        <div className="Content">
-          <div className="Lists">
-            <ListNews title="Helsingin Sanomat" url="https://www.hs.fi/rss/tuoreimmat.xml" />
-            <ListNews title="Ilta-Sanomat" url="https://www.is.fi/rss/tuoreimmat.xml" />
-            <ListNews title="MTV.fi" url="https://www.mtv.fi/api/feed/rss/uutiset_uusimmat" />
+      <div className="Wrapper">
+        <div className="App">
+          <div className="Navbar">
+            <ul className="Nav-ul">
+              <h1 className="Site-Title">Clik!</h1>
+            </ul>
           </div>
+          <div className="Content">
+          <div className="TabBackground"></div>
+          <MuiThemeProvider >
+          <Tabs className="Tabs"/>
+          </MuiThemeProvider>
+          </div>
+        </div>
+        <div className="Footer">
         </div>
       </div>
     );
   }
 }
+
 
 export default App;

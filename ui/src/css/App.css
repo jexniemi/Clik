@@ -1,41 +1,60 @@
+@media only screen and (min-width: 786px) {
+
+  .Wrapper {
+    display: inline-block;
+    position: relative;
+    margin: 0 0 auto;
+  }
+
 .App {
   background-image: url("../pics/newspaper.jpg");
-  padding-top: 62px; 
-}
-
-.button3 {
-  border-radius: 12px;
-  background-color: rgb(250, 93, 50); /* Green */
-  border: none;
-  color: white;
-  padding: 10px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  cursor: pointer;  
-  float: right;
-  margin-right: 20px;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  -webkit-transition-duration: 0.4s; /* Safari */
-  transition-duration: 0.4s;
-}
-
-.button3:hover {
-    background-color: rgb(6, 156, 6);
-    color: white;
+  padding-top: 80px; 
+  min-height: 1200px;
+  display: flex;
+  flex-direction: column;
 }
 
 .Content {
+  /* try padding: 20px for different look or remove it */
+
   background-color: white;
-  max-width: 1190px;
-  margin: auto;
+  max-width: 95%;
+  margin: 0 auto;
+  border-radius: 20px;
+  height: auto;
+  min-height: 780px;
+}
+
+.Footer {
+  width: 100%;
+  bottom: 0px;
+  background-color: rgb(34, 34, 34);
+  height: 100px;
+  z-index: 14000;
+  position:absolute;
+  text-align: center;
+}
+
+.TabBackground {
+  height: 5px;
+  background-color: rgb(1, 153, 167);
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.Tabs {
+  width: 100%;
+}
+
+.TabText {
+  color: rgb(78, 78, 78);
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
 }
 
 .Lists {
-  padding: 40px;
+  padding: 10px;
 }
+
 
 .Navbar {
   opacity: 0.9;
@@ -54,18 +73,11 @@
   overflow: hidden;
 }
 
-.Nav-li {
-  float: left;
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 0px;
-  text-decoration: none;
-}
-
 .Site-Title {
   font-size: 1.57em;
   font-family: "Lucida Console", Monaco, monospace;
   color: white;
   margin-left: 15px;
+}
+
 }

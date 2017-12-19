@@ -1,5 +1,6 @@
 import React from 'react';
 import '../css/ListNews.css';
+import '../css/MobileListNews.css'
 import $ from "jquery";
 var Panel = require('react-bootstrap').Panel;
 var ListGroup = require('react-bootstrap').ListGroup;
@@ -45,19 +46,18 @@ class ListNews extends React.Component {
 
     render() {
         const toList = this.state.news.slice(0, 10).map((item, i) => (
-            <ListGroupItem>
-                <a className="LN-a" target="_blank" href={item.link}>{i + 1 + ". " + item.title}</a>
+            <ListGroupItem key={i}>
+                <a className="ln-a" target="_blank" href={item.link}>{i + 1 + ". " + item.title}</a>
             </ListGroupItem>
         ));
-    var header = (<a href={this.state.link} target="_blank"><img className="Logo" src={this.state.imgURL} alt="SiteLogo" /></a>);
+        var header = (<a href={this.state.link} target="_blank"><img className="Logo" src={this.state.imgURL} alt="SiteLogo" /></a>);
         return (
-            <div className="LN-wrapper">
-                <Panel defaultExpanded header={header}>
-                    <ListGroup fill>
-                        {toList}
-                    </ListGroup>
-                </Panel>
-            </div>
+            <Panel className="ln-wrapper" defaultExpanded header={header}>
+                <ListGroup fill>
+                    {toList}
+                </ListGroup>
+            </Panel>
+
         );
     }
 }

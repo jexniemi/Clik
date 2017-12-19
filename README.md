@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/jexniemi/Clik.svg?branch=sideBySideLayout)](https://travis-ci.org/jexniemi/Clik)
+
 # Clik! #
 
  Web application that collects news from popular news websites

@@ -1,0 +1,30 @@
+@media only screen and (max-width: 768px) {
+    
+    .Logo {
+        height: auto; 
+        width: auto; 
+        max-width: 160px; 
+        max-height: 32px;
+    }
+
+    .ln-a{
+        color: rgb(56, 55, 55);
+    }
+    
+    .ln-a:link {
+        text-decoration: none;
+    }
+    
+    .ln-a:visited {
+        text-decoration: none;
+    }
+    
+    .ln-a:hover {
+        text-decoration: underline;
+    }
+    
+    .ln-a:active {
+        text-decoration: underline;
+    }
+    
+}
