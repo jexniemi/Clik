@@ -1,12 +1,9 @@
 import React from 'react';
 import './css/App.css';
 import './css/MobileApp.css';
-import ListNews from './components/ListNews';
 import Tabs from './components/Tabs';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 
-var Nav = require('react-bootstrap').Nav;
-var NavItem = require('react-bootstrap').NavItem;
 
 class App extends React.Component {
   constructor(props) {
@@ -35,7 +32,8 @@ class App extends React.Component {
             </ul>
           </div>
           <div className="Content">
-          <MuiThemeProvider>
+          <div className="TabBackground"></div>
+          <MuiThemeProvider >
           <Tabs className="Tabs"/>
           </MuiThemeProvider>
           </div>
@@ -46,5 +44,6 @@ class App extends React.Component {
     );
   }
 }
+
 
 export default App;

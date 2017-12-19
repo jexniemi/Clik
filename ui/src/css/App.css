@@ -15,12 +15,14 @@
 }
 
 .Content {
-  padding: 20px;
+  /* try padding: 20px for different look or remove it */
+
   background-color: white;
   max-width: 95%;
   margin: 0 auto;
   border-radius: 20px;
   height: auto;
+  min-height: 780px;
 }
 
 .Footer {
@@ -33,6 +35,13 @@
   text-align: center;
 }
 
+.TabBackground {
+  height: 5px;
+  background-color: rgb(1, 153, 167);
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
 .Tabs {
   width: 100%;
 }
@@ -40,6 +49,10 @@
 .TabText {
   color: rgb(78, 78, 78);
   font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+
+.Lists {
+  padding: 10px;
 }
 
 

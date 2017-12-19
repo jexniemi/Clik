@@ -5,6 +5,8 @@
     display: inline-block;
     vertical-align: top;
     margin: 1.5%;
+    min-width: 30%;
+    min-height: 632px;
 }
 
 
